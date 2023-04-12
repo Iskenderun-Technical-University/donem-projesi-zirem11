@@ -1,0 +1,10 @@
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\bin\Debug\Ayçiçek Yağı Otomasyon Arayüzü.exe.config
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\bin\Debug\Ayçiçek Yağı Otomasyon Arayüzü.exe
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\bin\Debug\Ayçiçek Yağı Otomasyon Arayüzü.pdb
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek Yağı Otomasyon Arayüzü.csproj.AssemblyReference.cache
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek_Yağı_Otomasyon_Arayüzü.Form1.resources
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek_Yağı_Otomasyon_Arayüzü.Properties.Resources.resources
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek Yağı Otomasyon Arayüzü.csproj.GenerateResource.cache
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek Yağı Otomasyon Arayüzü.csproj.CoreCompileInputs.cache
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek Yağı Otomasyon Arayüzü.exe
+C:\Users\musta\Desktop\Otomasyon Aşamaları VS 2019\Ayçiçek Yağı Otomasyon Arayüzü\Ayçiçek Yağı Otomasyon Arayüzü\obj\Debug\Ayçiçek Yağı Otomasyon Arayüzü.pdb
