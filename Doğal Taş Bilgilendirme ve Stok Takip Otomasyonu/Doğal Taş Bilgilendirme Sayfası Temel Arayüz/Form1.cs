@@ -40,5 +40,13 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             fb.Show();
             this.Hide();
         }
+
+        private void btndogaltaslar_Click(object sender, EventArgs e)
+        {
+            //fba=form bilgilendirme A
+            frmbilgiA fba = new frmbilgiA();
+            fba.Show();
+            this.Hide();
+        }
     }
 }

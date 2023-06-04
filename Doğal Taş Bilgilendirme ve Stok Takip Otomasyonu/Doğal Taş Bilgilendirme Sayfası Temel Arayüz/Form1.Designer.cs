@@ -50,6 +50,7 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.btndogaltaslar.TabIndex = 1;
             this.btndogaltaslar.Text = "Doğal Taşlar";
             this.btndogaltaslar.UseVisualStyleBackColor = true;
+            this.btndogaltaslar.Click += new System.EventHandler(this.btndogaltaslar_Click);
             // 
             // btnpersonelgiris
             // 
