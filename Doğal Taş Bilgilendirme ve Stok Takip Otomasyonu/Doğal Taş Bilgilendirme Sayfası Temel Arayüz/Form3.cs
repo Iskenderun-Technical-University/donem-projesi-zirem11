@@ -18,7 +18,7 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source = DESKTOP-BKILGTG\\MSSQLSERVER03; Initial Catalog = Dogal_Tas_Stok_Takip; Integrated Security = True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-BKILGTG\\MSSQLSERVER03; Initial Catalog=Dogal_Tas_Stok_Takip; Integrated Security = True");
 
         private void frmstoktakip_Load(object sender, EventArgs e)
         {
@@ -54,7 +54,7 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
         private void btnsil_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komutsil = new SqlCommand("Delete from Stok_Tablosu where UrunId=@t1", baglanti);
+            SqlCommand komutsil = new SqlCommand("Delete from Stok_Tablosu where Urunid=@t1", baglanti);
             komutsil.Parameters.AddWithValue("@t1", txtid.Text);
             komutsil.ExecuteNonQuery();
             baglanti.Close();
@@ -64,13 +64,21 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
         private void btngüncelle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komutgüncelle = new SqlCommand("Update Stok_Tablosu set UrunId=@a1, UrunAd=@a2, UrunAdet=@a3", baglanti);
+            SqlCommand komutgüncelle = new SqlCommand("Update Stok_Tablosu set Urunid=@a1, UrunAd=@a2, UrunAdet=@a3", baglanti);
             komutgüncelle.Parameters.AddWithValue("@a1", txtid.Text);
             komutgüncelle.Parameters.AddWithValue("@a2", txtad.Text);
             komutgüncelle.Parameters.AddWithValue("@a3", txtadet.Text);
             komutgüncelle.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Bilgiler güncellendi.");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilendeger = dataGridView1.SelectedCells[0].RowIndex;
+            txtid.Text = dataGridView1.Rows[secilendeger].Cells[0].Value.ToString();
+            txtad.Text = dataGridView1.Rows[secilendeger].Cells[1].Value.ToString();
+            txtadet.Text = dataGridView1.Rows[secilendeger].Cells[2].Value.ToString();
         }
     }
 }

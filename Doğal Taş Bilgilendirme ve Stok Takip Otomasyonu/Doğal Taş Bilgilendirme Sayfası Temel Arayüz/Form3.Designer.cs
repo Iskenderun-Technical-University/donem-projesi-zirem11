@@ -32,6 +32,11 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.components = new System.ComponentModel.Container();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.urunidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.urunAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.urunAdetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stokTablosuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dogal_Tas_Stok_TakipDataSet2 = new Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz.Dogal_Tas_Stok_TakipDataSet2();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btntemizle = new System.Windows.Forms.Button();
             this.btngüncelle = new System.Windows.Forms.Button();
@@ -45,18 +50,13 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dogal_Tas_Stok_TakipDataSet2 = new Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz.Dogal_Tas_Stok_TakipDataSet2();
-            this.stokTablosuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stok_TablosuTableAdapter = new Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz.Dogal_Tas_Stok_TakipDataSet2TableAdapters.Stok_TablosuTableAdapter();
-            this.urunidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.urunAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.urunAdetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokTablosuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogal_Tas_Stok_TakipDataSet2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dogal_Tas_Stok_TakipDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokTablosuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -65,7 +65,7 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.groupBox3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.Location = new System.Drawing.Point(13, 326);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(681, 166);
+            this.groupBox3.Size = new System.Drawing.Size(728, 221);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Liste";
@@ -79,10 +79,39 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.urunAdDataGridViewTextBoxColumn,
             this.urunAdetDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.stokTablosuBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 35);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 118);
+            this.dataGridView1.Size = new System.Drawing.Size(647, 175);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // urunidDataGridViewTextBoxColumn
+            // 
+            this.urunidDataGridViewTextBoxColumn.DataPropertyName = "Urunid";
+            this.urunidDataGridViewTextBoxColumn.HeaderText = "Urunid";
+            this.urunidDataGridViewTextBoxColumn.Name = "urunidDataGridViewTextBoxColumn";
+            // 
+            // urunAdDataGridViewTextBoxColumn
+            // 
+            this.urunAdDataGridViewTextBoxColumn.DataPropertyName = "UrunAd";
+            this.urunAdDataGridViewTextBoxColumn.HeaderText = "UrunAd";
+            this.urunAdDataGridViewTextBoxColumn.Name = "urunAdDataGridViewTextBoxColumn";
+            // 
+            // urunAdetDataGridViewTextBoxColumn
+            // 
+            this.urunAdetDataGridViewTextBoxColumn.DataPropertyName = "UrunAdet";
+            this.urunAdetDataGridViewTextBoxColumn.HeaderText = "UrunAdet";
+            this.urunAdetDataGridViewTextBoxColumn.Name = "urunAdetDataGridViewTextBoxColumn";
+            // 
+            // stokTablosuBindingSource
+            // 
+            this.stokTablosuBindingSource.DataMember = "Stok_Tablosu";
+            this.stokTablosuBindingSource.DataSource = this.dogal_Tas_Stok_TakipDataSet2;
+            // 
+            // dogal_Tas_Stok_TakipDataSet2
+            // 
+            this.dogal_Tas_Stok_TakipDataSet2.DataSetName = "Dogal_Tas_Stok_TakipDataSet2";
+            this.dogal_Tas_Stok_TakipDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox2
             // 
@@ -213,44 +242,16 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.label1.TabIndex = 2;
             this.label1.Text = "Ürün Id:";
             // 
-            // dogal_Tas_Stok_TakipDataSet2
-            // 
-            this.dogal_Tas_Stok_TakipDataSet2.DataSetName = "Dogal_Tas_Stok_TakipDataSet2";
-            this.dogal_Tas_Stok_TakipDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stokTablosuBindingSource
-            // 
-            this.stokTablosuBindingSource.DataMember = "Stok_Tablosu";
-            this.stokTablosuBindingSource.DataSource = this.dogal_Tas_Stok_TakipDataSet2;
-            // 
             // stok_TablosuTableAdapter
             // 
             this.stok_TablosuTableAdapter.ClearBeforeFill = true;
-            // 
-            // urunidDataGridViewTextBoxColumn
-            // 
-            this.urunidDataGridViewTextBoxColumn.DataPropertyName = "Urunid";
-            this.urunidDataGridViewTextBoxColumn.HeaderText = "Urunid";
-            this.urunidDataGridViewTextBoxColumn.Name = "urunidDataGridViewTextBoxColumn";
-            // 
-            // urunAdDataGridViewTextBoxColumn
-            // 
-            this.urunAdDataGridViewTextBoxColumn.DataPropertyName = "UrunAd";
-            this.urunAdDataGridViewTextBoxColumn.HeaderText = "UrunAd";
-            this.urunAdDataGridViewTextBoxColumn.Name = "urunAdDataGridViewTextBoxColumn";
-            // 
-            // urunAdetDataGridViewTextBoxColumn
-            // 
-            this.urunAdetDataGridViewTextBoxColumn.DataPropertyName = "UrunAdet";
-            this.urunAdetDataGridViewTextBoxColumn.HeaderText = "UrunAdet";
-            this.urunAdetDataGridViewTextBoxColumn.Name = "urunAdetDataGridViewTextBoxColumn";
             // 
             // frmstoktakip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(876, 507);
+            this.ClientSize = new System.Drawing.Size(890, 548);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -259,11 +260,11 @@ namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
             this.Load += new System.EventHandler(this.frmstoktakip_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokTablosuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogal_Tas_Stok_TakipDataSet2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dogal_Tas_Stok_TakipDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokTablosuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

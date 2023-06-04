@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Doğal_Taş_Bilgilendirme_Sayfası_Temel_Arayüz
 {
-    public partial class frmbilgi5 : Form
+    public partial class frmbilgi6 : Form
     {
-        public frmbilgi5()
+        public frmbilgi6()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmbilgi4 fb4 = new frmbilgi4();
-            fb4.Show();
+            frmbilgi5 fb5 = new frmbilgi5();
+            fb5.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmbilgi6 fb6 = new frmbilgi6();
-            fb6.Show();
+            frmbilgi7 fb7 = new frmbilgi7();
+            fb7.Show();
             this.Hide();
         }
     }
